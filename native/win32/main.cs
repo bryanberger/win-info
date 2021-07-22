@@ -12,8 +12,7 @@ namespace WinInfo
       int windowId, 
       int processId, 
       string processFileName, 
-      RECT bounds, 
-      // List<ScreenInfo> screens
+      RECT bounds
     ) { 
 
       System.Threading.Thread.CurrentThread.CurrentCulture = System.Globalization.CultureInfo.InvariantCulture;
@@ -58,7 +57,6 @@ namespace WinInfo
         Path.GetFileName(processFileName), 
         processId,
         processFileName,
-        // screenData,
         bounds.Left, bounds.Top, 
         bounds.Right-bounds.Left, bounds.Bottom-bounds.Top);
     }
@@ -86,8 +84,7 @@ namespace WinInfo
         windowId, 
         processId, 
         processFileName, 
-        bounds, 
-        // screens
+        bounds
       ));
     }
   }
