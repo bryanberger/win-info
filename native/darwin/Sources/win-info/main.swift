@@ -98,22 +98,6 @@ func getConfig(pid: pid_t) throws -> String {
     "width": \(Int(bounds.width)),
     "height": \(Int(bounds.height))
   },
-  "screens": [\(screens!.map {
-    """
-    {	
-      "x": \(Int($0.bounds.minX)),
-      "y": \(Int($0.bounds.minY)),
-      "width": \(Int($0.bounds.width)),
-      "height": \(Int($0.bounds.height)),
-      "index": \(Int($0.index)),
-      "scale": {
-        "x": \(Double($0.native.width)/Double($0.bounds.width)),
-        "y": \(Double($0.native.height)/Double($0.bounds.height))
-      }
-    }
-    """
-  } .joined(separator: ","))
-  ],
   "owner": {
     "name": "\(window[kCGWindowOwnerName as String] as! String)",
     "processId": \(pid),
