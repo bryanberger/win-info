@@ -12,6 +12,9 @@
 	"engines": {
 		"node": ">=8"
 	},
+	"publishConfig": {
+		"access": "public"
+	},
 	"scripts": {
 		"test": "ava",
 		"build-win32": "mcs native/win32/*.cs -r:System.Windows.Forms.dll -Out:bin/win-info-win32.exe",
