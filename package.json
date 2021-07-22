@@ -1,6 +1,6 @@
 {
 	"name": "@bberger/win-info-fork",
-	"version": "0.2.13",
+	"version": "0.2.14",
 	"description": "Get metadata about a program window (title, id, bounds, owner, etc). Works on macOS, X11-based Desktops (Linux, BSD), Windows.",
 	"license": "MIT",
 	"repository": "bryanberger/win-info",

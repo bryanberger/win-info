@@ -35,17 +35,6 @@ const * as winInfo = require('@arcsine/win-info');
 			height: 900,
 			width: 1440
 		},
-		// screens: [{
-		// 	x: 0,
-		// 	y: 0, 
-		// 	height: 920,
-		// 	width: 1440,
-		// 	index: 0,
-		// 	scale: {
-		// 		width: 1,
-		// 		height: 1
-		// 	}
-		// }],
 		owner: {
 			name: 'Google Chrome',
 			processId: 310,
@@ -103,15 +92,6 @@ Returns an `Object` with the result for the active window.
 	- `y` *(number)*
 	- `width` *(number)*
 	- `height` *(number)*
-- `screens` *(Array)* - Screens that overlap with the window
-	- `x` *(number)*
-	- `y` *(number)*
-	- `width` *(number)*
-	- `height` *(number)*
-	- `index` *(number)* - Display index
-	- `scale` 
-		- `x` *(number)* - The horizontal pixel ratio for the screen (physical to logical)
-		- `y` *(number)* - The vertical pixel ratio for the screen (physical to logical)
 - `owner` *(Object)* - App that owns the window
 	- `name` *(string)* - Name of the app
 	- `processId` *(number)* - Process identifier

@@ -15,27 +15,7 @@ namespace WinInfo
       RECT bounds
     ) { 
 
-      System.Threading.Thread.CurrentThread.CurrentCulture = System.Globalization.CultureInfo.InvariantCulture;
-
-      // string screenData = 
-      //   String.Join(",\n",
-      //     screens.ConvertAll(screen => 
-      //       String.Format(@"
-      //   {{
-      //     ""x"": {0},
-      //     ""y"": {1},
-      //     ""width"": {2},
-      //     ""height"": {3},
-      //     ""index"": {4},
-      //     ""scale"": {{
-      //       ""x"": {5:0.00},
-      //       ""y"": {6:0.00}
-      //     }}
-      //   }}", 
-      //     screen.WorkArea.Left, screen.WorkArea.Top, 
-      //     screen.WorkArea.Right - screen.WorkArea.Left, screen.WorkArea.Bottom - screen.WorkArea.Top,
-      //     screen.Index, screen.Scale[0], screen.Scale[1]
-      //     )));        
+      System.Threading.Thread.CurrentThread.CurrentCulture = System.Globalization.CultureInfo.InvariantCulture;     
 
        return  String.Format(@"{{
     ""title"": ""{0}"",
@@ -46,10 +26,10 @@ namespace WinInfo
         ""path"": ""{4}""
     }},
     ""bounds"": {{
-        ""x"": {6},
-        ""y"": {7},
-        ""width"": {8},
-        ""height"": {9}
+        ""x"": {5},
+        ""y"": {6},
+        ""width"": {7},
+        ""height"": {8}
     }}
 }}", 
         windowTitle, 
